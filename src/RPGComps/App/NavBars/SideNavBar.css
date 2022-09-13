@@ -1,0 +1,5 @@
+.SideNavBar {
+    display: flex;
+    position: absolute;
+    height: 100%;
+}

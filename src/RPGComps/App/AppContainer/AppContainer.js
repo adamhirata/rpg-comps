@@ -13,7 +13,7 @@ export default function AppContainer(props) {
     props.router ? props.router : null,
   ];
 
-  // Variables
+  // [Variables]
 
   const route = window.location.pathname;
   const params = new URLSearchParams(window.location.search);
@@ -38,7 +38,13 @@ export default function AppContainer(props) {
     }
   }, []);
 
-  return <div className="AppContainer">{screenContainer}</div>;
+  return (
+    <div className="AppContainer">
+      {screenContainer}
+      {sideNav}
+      {topNav}
+    </div>
+  );
 }
 
 function ScreenContainer(props) {
